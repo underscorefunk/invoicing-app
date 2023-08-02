@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style type="text/tailwindcss">
+        @layer components {
+            .sidebar-clients-list__items {
+                @apply grid col-auto gap-2 ;
+            }
+
+            .sidebar-clients-list__link {
+                @apply rounded bg-white block;
+            }
+
+            .sidebar-clients-list__label {
+                @apply block
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="layout" class="flex">
+
+    <div id="sidebar" class="min-h-screen max-h-screen bg-gray-900 flex-1 max-w-[200px] p-2">
+        <div id="sidebar-clients">
+
+            <div class="sidebar-clients-list">
+                <h2 id="sidebar-clients-list__heading">
+                    Clients
+                </h2>
+                <ul id="sidebar-clients-list__items">
+                    <li class="sidebar-clients-list__item">
+                        <a class="sidebar-clients-list__link" href="#">
+                        <span class="sidebar-clients-list__label">
+                            Client 1
+                        </span>
+                        </a>
+                    </li>
+                    <li class="sidebar-clients-list__item">
+                        <a class="sidebar-clients-list__link" href="#">
+                        <span class="sidebar-clients-list__label">
+                            Client 1
+                        </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="main" class="min-h-screen bg-gray-700 flex-grow">
+
+    </div>
+
+</div>
+
+</body>
+</html>
